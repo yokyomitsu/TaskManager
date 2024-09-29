@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Core", "TaskManager.Core\TaskManager.Core.csproj", "{E9DBEC80-A735-4E2B-985A-4F115026FC18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.CLI", "TaskManager.CLI\TaskManager.CLI.csproj", "{858F5E12-FA75-4FCC-B25A-551618AD28C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Tests", "TaskManager.Tests\TaskManager.Tests.csproj", "{B30D223A-7C82-4D73-96ED-6DA9BFAA0F68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9DBEC80-A735-4E2B-985A-4F115026FC18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9DBEC80-A735-4E2B-985A-4F115026FC18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9DBEC80-A735-4E2B-985A-4F115026FC18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9DBEC80-A735-4E2B-985A-4F115026FC18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{858F5E12-FA75-4FCC-B25A-551618AD28C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{858F5E12-FA75-4FCC-B25A-551618AD28C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{858F5E12-FA75-4FCC-B25A-551618AD28C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{858F5E12-FA75-4FCC-B25A-551618AD28C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B30D223A-7C82-4D73-96ED-6DA9BFAA0F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B30D223A-7C82-4D73-96ED-6DA9BFAA0F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B30D223A-7C82-4D73-96ED-6DA9BFAA0F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B30D223A-7C82-4D73-96ED-6DA9BFAA0F68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

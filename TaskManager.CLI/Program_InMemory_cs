@@ -1,0 +1,33 @@
+﻿// Program.cs
+using Spectre.Console.Cli;
+using TaskManager.CLI.Commands;
+using TaskManager.Core.Models;
+using TaskManager.Core.Services;
+using TaskManager.Core.Repositories;
+using TaskManager.CLI.DependencyInjection;
+
+namespace TaskManager.CLI
+{
+    class Program
+    {
+        static int Main(string[] args)
+        {
+            var registrar = new TypeRegistrar();
+
+            // Register services in the DI container using generic methods
+            registrar.Register<IRepository<TaskItem>, InMemoryRepository<TaskItem>>();
+            registrar.Register<ITaskService, TaskService>();
+
+            var app = new CommandApp(registrar);
+
+            app.Configure(config =>
+            {
+                config.AddCommand<AddTaskCommand>("add");
+                config.AddCommand<ListTasksCommand>("list");
+                config.AddCommand<DeleteTaskCommand>("delete");
+            });
+
+            return app.Run(args);
+        }
+    }
+}
